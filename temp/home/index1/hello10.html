@@ -1,0 +1,10 @@
+{include file="index1/header"}
+<h2>一共有:{$count}条</h2>
+{volist name="list" id="us"}
+<div>
+	id:{$us.id}<br>
+	email:{$us.email}<br>
+</div>
+{/volist}
+{$list->render()}
+{include file="index1/footer"}
